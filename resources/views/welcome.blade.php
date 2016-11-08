@@ -1,44 +1,37 @@
-<!DOCTYPE html>
 <html>
     <head>
-        <title>Laravel</title>
-
-        <link href="https://fonts.googleapis.com/css?family=Lato:100" rel="stylesheet" type="text/css">
-
-        <style>
-            html, body {
-                height: 100%;
-            }
-
-            body {
-                margin: 0;
-                padding: 0;
-                width: 100%;
-                display: table;
-                font-weight: 100;
-                font-family: 'Lato';
-            }
-
-            .container {
-                text-align: center;
-                display: table-cell;
-                vertical-align: middle;
-            }
-
-            .content {
-                text-align: center;
-                display: inline-block;
-            }
-
-            .title {
-                font-size: 96px;
-            }
-        </style>
+        <title>@yield('title')</title>
+        @include('resources.css')
+        @include('resources.js')
+        @include('resources.font')
     </head>
     <body>
-        <div class="container">
-            <div class="content">
-                <div class="title">Laravel 5</div>
+        <div class="container logo-default">
+            <h1>
+                Title Here
+            </h1>
+
+
+            <div class="col-lg-6">
+                <div class="row">
+                    <div class="col-lg-12 circle-overflow">
+                        <button class="half-circle btn btn-primary">
+                               
+                        </button>
+                    </div>
+                    <div class="col-lg-6 circle-overflow">
+                        <div class="col-lg-6 circle-overflow-left">
+                            <button class="half-circle-left btn btn-primary">
+
+                            </button>
+                        </div>
+                        <div class="col-lg-6 circle-overflow-right">
+                            <a class="half-circle-right btn btn-primary">
+
+                            </a>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </body>
