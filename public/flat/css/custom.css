@@ -1,40 +1,24 @@
- @font-face { font-family: GreatVibes; src: url('/fonts/GreatVibes-Regular.otf'); } 
- 
-.half-circle{
-    height: 300px;
-    width:300px;
-    display: block;
-    border-radius: 360px;
-     margin-top: 150px;
+ @font-face { font-family: GreatVibes; src: url('/fonts/GreatVibes-Regular.otf'); }
+
+.center-div{
+  margin-left: 30vw;
+  margin-top: 15vh;
 }
-.circle-overflow{
-overflow: hidden;
-height: 300px;
-width:300px;
+.background-color-green{
+  background-color: #3c9cc6;
 }
-.circle-overflow-left{
-overflow: hidden;
-height: 150px;
-width:150px;
+.background-color-green{
+  background-color: #3c9cc6;
 }
-.circle-overflow-right{
-overflow: hidden;
-border: 2px solid red;
-height: 150px;
-width:150px;
+.font-color-white{
+  color:white;
 }
-.half-circle-left{
-    height: 300px;
-    width:300px;
-    display: block;
-    border-radius: 360px;
-    margin-top: -150px;
+.no-border-radius{
+  border-radius: 0px;
 }
-.half-circle-right{
-    height: 300px;
-    width:300px;
-    display: block;
-    border-radius: 360px;
-     margin-top:-180px;
-     margin-left: -180px;
+.text-box-plain{
+  border-top: 0px;
+  border-left: 0px;
+  border-right: 0px;
+    width: 70%;
 }

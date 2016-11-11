@@ -6,31 +6,20 @@
         @include('resources.font')
     </head>
     <body>
-        <div class="container logo-default">
-            <h1>
-                Title Here
-            </h1>
-
-
-            <div class="col-lg-6">
-                <div class="row">
-                    <div class="col-lg-12 circle-overflow">
-                        <button class="half-circle btn btn-primary">
-                               
-                        </button>
-                    </div>
-                    <div class="col-lg-6 circle-overflow">
-                        <div class="col-lg-6 circle-overflow-left">
-                            <button class="half-circle-left btn btn-primary">
-
-                            </button>
-                        </div>
-                        <div class="col-lg-6 circle-overflow-right">
-                            <a class="half-circle-right btn btn-primary">
-
-                            </a>
-                        </div>
-                    </div>
+        <div class="container-fluid">
+            <div class="col-lg-12">
+                <div class="col-lg-4 col-lg-offset-4 center-div">
+                  <div class="col-lg-12 background-color-green">
+                    <h1 class="font-color-white">Title Here</h1>
+                  </div>
+                  <div class="col-lg-12 background-color-grey">
+                    {!! FORM::open(array('url' => 'login')) !!}
+                      <div class="form-group">
+                        {!!FORM::text('username','',['class'=>'col-lg-1 col-lg-push-2 form-control no-border-radius text-box-plain'])!!}
+                      </div>
+                    {!! FORM::close() !!}
+                  </div>
+                  <div>
                 </div>
             </div>
         </div>
