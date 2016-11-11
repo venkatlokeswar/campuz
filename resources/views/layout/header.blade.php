@@ -2,8 +2,8 @@
 <html>
 <head>
   <meta charset="utf-8">
-  @include('resources.css')
   @include('resources.js')
+  @include('resources.css')
   @include('resources.font')
   <title>{{"Dashboard"}}</title>
 </head>
