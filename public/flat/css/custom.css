@@ -166,3 +166,43 @@ box-shadow: 0px 1px 6px #555;
   min-height: 460px;
 }
 /****************************************/
+
+.highcharts-drilldown-axis-label{
+  text-decoration: none;
+  font-family: segoe ui;
+  color: white;
+}
+.bg-color-emerald{
+  background-color: #2ECC71;
+}
+.bg-color-nephritess{
+  background-color: #E74C3C;
+}
+.display-block{
+  display: block;
+}
+.display-card-top{
+  height:60px;
+  line-height:62px;
+  color: white;
+  padding-left:6%;
+}
+.display-card-bottom{
+  height:60px;
+  line-height:62px;
+  color: white;
+  padding-left:6%;
+}
+.font-color-black{
+  color: black;
+}
+.todo-name{
+  color: black;
+}
+.todo li{
+  background-color: #fff;
+}
+
+::-webkit-input-placeholder { /* Chrome */
+  color: white;
+}

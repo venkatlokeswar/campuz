@@ -89,7 +89,7 @@
                   </div>
                 </div>
                 <div class="col-lg-10">
-                  <ol class="breadcrumb no-border-radius">
+                  <ol class="breadcrumb no-border-radius background-color-white">
                     <li class="active"><a href="#">Dashboard</a></li>
                     <li><a href="#"></a></li>
                   </ol>
