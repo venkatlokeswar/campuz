@@ -5,3 +5,4 @@
 {!!HTML::script('flat/js/vendor/respond.min.js')!!}
 {!!HTML::script('flat/js/flat-ui.min.js')!!}
 {!! HTML::script('flat/js/flat-ui.js')!!}
+{!! HTML::script('clock.js')!!}
