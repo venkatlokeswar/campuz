@@ -1,5 +1,6 @@
 @extends('layout.header')
 @include('resources.highcharts')
+{!!Html::style('calender/monthly.css')!!}
 @section('content')
 <div class="col-lg-12">
   <div class="row">
@@ -30,34 +31,21 @@
           </div>
         </div>
             <div class="col-lg-12 bg-color-emerald padding-top-1">
-              <h5 class="bg-color-emerald display-block display-card-top">
-                <span class="glyphicon glyphicon-ok-circle">
-                  <!-- <img src="/images/active.png" alt="" class="img-responsive" width="50"/> -->
-                </span> Active Students<span><h6 class="pull-right font-color-white">2645</h6></span></h5>
-                <span><div class="progress no-border-radius">
-                  <div class="progress-bar" style="width: 90%;"><span>90%</span></div>
-                </div>
-              </span>
+              <div id="attendence" class="row active-inactive-students">
             </div>
-            <div class="col-lg-12 bg-color-nephritess padding-top-1">
-              <h5 class=" display-block display-card-bottom"><span class="glyphicon glyphicon-remove-circle">
-              </span> Detained Students<span><h6 class="pull-right font-color-white">156</h6></span></h5>
-              <span><div class="progress no-border-radius">
-                <div class="progress-bar" style="width: 10%;"><span>10%</span></div>
-              </div>
-            </span>
-            </div
           </div>
         </div>
       </div>
     </div>
   </div>
   @include('dashboard.barchart-academic')
+  @include('dashboard.piechart-attendence')
   <div class="col-lg-12">
     <div class="col-lg-8">
       @include('dashboard.attendence')
     </div>
-    <div class="col-lg-4">
+    <div class="col-lg-3">
+      <h4>Tasks and Events</h4>
           @include('dashboard.todo-list')
     </div>
   </div>

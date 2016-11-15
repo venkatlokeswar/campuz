@@ -206,3 +206,59 @@ box-shadow: 0px 1px 6px #555;
 ::-webkit-input-placeholder { /* Chrome */
   color: white;
 }
+
+/*******calender*************/
+h1 {
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+  text-align: center;
+  font-size: 77px;
+  text-shadow: 0 0px 30px rgba(0, 0, 0, 0.2);
+}
+h2 {
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+  font-size:30px;
+  text-shadow: 0 0px 20px rgba(0, 0, 0, 0.3);
+  color:#fff;
+}
+.monthly {
+  box-shadow: 0 0px 5px rgba(0, 0, 0, 0.5);
+}
+
+.button {
+  display: inline-block;
+  padding: 15px 25px;
+  margin: 25px 0 75px 0;
+  border-radius: 3px;
+  color: #fff;
+  background: #000;
+  letter-spacing: .4em;
+  text-decoration: none;
+  font-size: 13px;
+}
+.button:hover {
+  background: #3b587a;
+}
+.desc {
+  max-width: 250px;
+  text-align: left;
+  font-size:14px;
+  padding-top:30px;
+  line-height: 1.4em;
+}
+.resize {
+  background: #222;
+  display: inline-block;
+  padding: 6px 15px;
+  border-radius: 22px;
+  font-size: 13px;
+}
+@media (max-height: 700px) {
+  .sticky {
+    position: relative;
+  }
+}
+@media (max-width: 600px) {
+  .resize {
+    display: none;
+  }
+}
