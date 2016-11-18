@@ -54,4 +54,5 @@ month[10] = "November";
 month[11] = "December";
 $('#day').html(day);
 $('#month').html(month[date.getMonth()]);
+$('#year').html(date.getFullYear());
 });
