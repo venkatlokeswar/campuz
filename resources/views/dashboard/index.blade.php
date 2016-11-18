@@ -13,16 +13,19 @@
       <div class=" col-lg-4">
         <div class="col-lg-12 background-color-green font-color-white">
           <div class="row">
-            <div class="col-lg-12 ">
+            <div class="col-lg-12">
               <div class="row">
                 <div class="col-lg-12">
-                    <h3 id="clock"></h3>
                     <div class="col-lg-12">
-                      <div class="col-lg-4">
-                          <h6 id="day"></h6>
-                      </div>
                       <div class="col-lg-6">
-                        <h6 id="month"></h6>
+                          <h4 id="clock"></h4>
+                      </div>
+                      <div class="col-lg-3">
+                          <span id="day"></span>
+                          <span id="month"></span>
+                      </div>
+                      <div class="col-lg-3">
+                        <h4 id="year"></h4>
                       </div>
                     </div>
                 </div>
@@ -42,7 +45,7 @@
   @include('dashboard.piechart-attendence')
   <div class="col-lg-12">
     <div class="col-lg-8">
-      @include('dashboard.attendence')
+       @include('dashboard.circular')
     </div>
     <div class="col-lg-3">
       <h4>Tasks and Events</h4>
