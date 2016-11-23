@@ -15,7 +15,47 @@
           <a class="navbar-brand" href="#">WebSiteName</a>
         </div>
         <ul class="nav navbar-nav navbar-right">
-          <li><a href="#"><span class="glyphicon glyphicon-log-out"></span> Logout</a></li>
+          <li><a href="#"> </a></li>
+          <li class="dropdown">
+            <a class="dropdown-toggle" data-toggle="dropdown" href="#"> Quick Links
+              <span class="caret"></span></a>
+              <div class="dropdown-menu">
+                  <table>
+                    <tr>
+                      <td>
+                        <h4><span class="glyphicon glyphicon-th"></span></h4>
+                      </td>
+                      <td>
+                        <h4><span class="glyphicon glyphicon-th"></span></h4>
+                      </td>
+                      <td>
+                        <h4><span class="glyphicon glyphicon-th"></span></h4>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <h4><span class="glyphicon glyphicon-th"></span></h4>
+                      </td>
+                      <td>
+                        <h4><span class="glyphicon glyphicon-th"></span></h4>
+                      </td>
+                      <td>
+                        <h4><span class="glyphicon glyphicon-th"></span></h4>
+                      </td>
+                    </tr>
+                  </table>
+              </div>
+          </li>
+          <li class="dropdown">
+            <a class="dropdown-toggle" data-toggle="dropdown" href="#"><span class="glyphicon glyphicon-cog"></span> Settings
+              <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="#">Page 1-1</a></li>
+                <li><a href="#">Page 1-2</a></li>
+                <li><a href="#">Page 1-3</a></li>
+              </ul>
+            </li>
+            <li><a href="#"><span class="glyphicon glyphicon-log-out"></span> Logout</a></li>
         </ul>
       </div>
     </nav>
@@ -25,7 +65,7 @@
           <div class="profile-sidebar ">
             <!-- SIDEBAR USERPIC -->
             <div class="profile-userpic">
-              <img src="https://secure.gravatar.com/avatar/3b6e40d8a242b1a01a8a7d20c1d16022?s=100&r=g&d=mm" class="img-responsive" alt="">
+              <img src="/images/IMG_5975.png" class="img-responsive" alt="">
             </div>
             <!-- END SIDEBAR USERPIC -->
             <!-- SIDEBAR USER TITLE -->
@@ -57,48 +97,59 @@
                       <i class="glyphicon glyphicon-list-alt"></i>
                       Academics </a>
                     </li>
-                  <li>
-                    <li class="">
-                      <a href="#">
-                        <i class="glyphicon glyphicon-comment"></i>
-                        Notifications </a>
-                      </li>
+                    <li>
                       <li class="">
                         <a href="#">
-                          <i class="glyphicon glyphicon-calendar"></i>
-                          To-Do List </a>
+                          <i class="glyphicon glyphicon-comment"></i>
+                          Notifications </a>
                         </li>
                         <li class="">
                           <a href="#">
-                            <i class="glyphicon glyphicon-home"></i>
-                            Placement Cell </a>
+                            <i class="glyphicon glyphicon-calendar"></i>
+                            To-Do List </a>
                           </li>
-                    <li>
-                    <a href="#">
-                      <i class="glyphicon glyphicon-user"></i>
-                      Account Settings </a>
-                    </li>
-                      <li>
-                        <a href="#">
-                          <i class="glyphicon glyphicon-flag"></i>
-                          Help </a>
-                        </li>
-                      </ul>
+                          <li class="">
+                            <a href="#">
+                              <i class="glyphicon glyphicon-home"></i>
+                              Placement Cell </a>
+                            </li>
+                            <li>
+                              <a href="#">
+                                <i class="glyphicon glyphicon-user"></i>
+                                Account Settings </a>
+                              </li>
+                              <li>
+                                <a href="#">
+                                  <i class="glyphicon glyphicon-flag"></i>
+                                  Help </a>
+                                </li>
+                              </ul>
+                            </div>
+                            <!-- END MENU -->
+                          </div>
+                          <div class="col-lg-12">
+                            <form class="" role="search">
+                              <h6>Search</h6>
+                              <div class="input-group">
+                                <input type="text" class="form-control no-border-radius" placeholder=" Student/Employee" name="q">
+                                <div class="input-group-btn">
+                                  <button class="btn btn-default inline-button no-border-radius" type="submit"><i class="glyphicon glyphicon-search"></i></button>
+                                </div>
+                              </div>
+                            </form>
+                          </div>
+                        </div>
+                        <div class="col-lg-10">
+                          <ol class="breadcrumb no-border-radius background-color-white">
+                            <li class="active"><a href="#">Dashboard</a></li>
+                            <li><a href="#"></a></li>
+                          </ol>
+                          @yield('content')
+                        </div>
+                      </div>
+
                     </div>
-                    <!-- END MENU -->
+
                   </div>
-                </div>
-                <div class="col-lg-10">
-                  <ol class="breadcrumb no-border-radius">
-                    <li class="active"><a href="#">Dashboard</a></li>
-                    <li><a href="#"></a></li>
-                  </ol>
-                  @yield('content')
-                </div>
-              </div>
-
-            </div>
-
-          </div>
-        </body>
-        </html>
+                </body>
+                </html>
