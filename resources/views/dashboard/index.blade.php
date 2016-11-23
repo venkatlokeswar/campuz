@@ -5,10 +5,15 @@
 <div class="col-lg-12">
   <div class="row">
     <div class="col-lg-12">
-      <div class="col-lg-8">
+      <div class="col-lg-4">
         <div id="container" style="min-width: 310px; height: 400px;">
 
         </div>
+      </div>
+      <div class="col-lg-4">
+          <div class="" id="placement">
+
+          </div>
       </div>
       <div class=" col-lg-4">
         <div class="col-lg-12 background-color-green font-color-white">
@@ -25,7 +30,7 @@
                           <span id="month"></span>
                       </div>
                       <div class="col-lg-3">
-                        <h4 id="year"></h4>
+                        <h4 class="year"></h4>
                       </div>
                     </div>
                 </div>
@@ -38,16 +43,22 @@
             </div>
           </div>
         </div>
+        <div class="col-lg-8" style="margin-top:-50px;margin-bottom:50px">
+          <div class="col-lg-12" style="background-color:black;">
+          <h1>Some more content</h1>
+          </div>
+        </div>
       </div>
     </div>
   </div>
   @include('dashboard.barchart-academic')
   @include('dashboard.piechart-attendence')
+  @include('dashboard.placement')
   <div class="col-lg-12">
     <div class="col-lg-8">
        @include('dashboard.circular')
     </div>
-    <div class="col-lg-3">
+    <div class="col-lg-3" style="margin-top:-100px;">
       <h4>Tasks and Events</h4>
           @include('dashboard.todo-list')
     </div>

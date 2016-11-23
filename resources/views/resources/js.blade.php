@@ -1,4 +1,5 @@
 {!! HTML::script('jquery.js')!!}
+{!! HTML::script('bootstrap/js/bootstrap.min.js')!!}
 {!! HTML::script('flat/js/vendor/html5shiv.js')!!}
 {!!HTML::script('flat/js/vendor/video.js')!!}
 {!!HTML::script('flat/js/vendor/video.js')!!}
