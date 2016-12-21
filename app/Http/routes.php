@@ -16,5 +16,13 @@ Route::get('/', function () {
 });
 
 Route::get('/dashboard',function(){
-  return view('dashboard.index');
+  $this->data['active']="dashboard";
+  $this->data['currentPage']="Dashboard";
+  return view('dashboard.index',$this->data);
+});
+
+Route::get('/academics',function(){
+  $this->data['active']="academics";
+  $this->data['currentPage']="Academics";
+  return view('academics.index',$this->data);
 });

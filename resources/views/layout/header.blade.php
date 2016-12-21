@@ -87,39 +87,39 @@
             <!-- SIDEBAR MENU -->
             <div class="profile-usermenu">
               <ul class="nav">
-                <li class="active">
-                  <a href="#">
+                <li class="{{$active==="dashboard"?"active":""}}">
+                  <a href="/dashboard">
                     <i class="glyphicon glyphicon-dashboard"></i>
                     Dashboard </a>
                   </li>
-                  <li class="">
-                    <a href="#">
+                  <li class="{{$active==="academics"?"active":""}}">
+                    <a href="/academics">
                       <i class="glyphicon glyphicon-list-alt"></i>
                       Academics </a>
                     </li>
                     <li>
-                      <li class="">
-                        <a href="#">
+                      <li class="{{$active==="notifications"?"active":""}}">
+                        <a href="/notifications">
                           <i class="glyphicon glyphicon-comment"></i>
                           Notifications </a>
                         </li>
-                        <li class="">
-                          <a href="#">
+                        <li class="{{$active==="todolist"?"active":""}}">
+                          <a href="/toDoList">
                             <i class="glyphicon glyphicon-calendar"></i>
                             To-Do List </a>
                           </li>
-                          <li class="">
-                            <a href="#">
+                          <li class="{{$active==="placement"?"active":""}}">
+                            <a href="/placement">
                               <i class="glyphicon glyphicon-home"></i>
                               Placement Cell </a>
                             </li>
-                            <li>
-                              <a href="#">
+                            <li class="{{$active==="account"?"active":""}}">
+                              <a href="/settings">
                                 <i class="glyphicon glyphicon-user"></i>
                                 Account Settings </a>
                               </li>
-                              <li>
-                                <a href="#">
+                              <li class="{{$active==="help"?"active":""}}">
+                                <a href="/help">
                                   <i class="glyphicon glyphicon-flag"></i>
                                   Help </a>
                                 </li>
@@ -141,7 +141,7 @@
                         </div>
                         <div class="col-lg-10">
                           <ol class="breadcrumb no-border-radius background-color-white">
-                            <li class="active"><a href="#">Dashboard</a></li>
+                            <li class="active"><a href="#">{{$currentPage}}</a></li>
                             <li><a href="#"></a></li>
                           </ol>
                           @yield('content')

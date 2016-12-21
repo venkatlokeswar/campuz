@@ -325,3 +325,20 @@ h2 {
 	overflow-y: scroll;
 	margin-bottom: 25px;
 }
+.option-list ul{
+  background-color: white;
+}
+.option-list ul li{
+  border-bottom: 2px solid #dddddd;
+}
+.option-list ul li a{
+  color:black;
+}
+.option-list ul li a:hover{
+  background-color: #34495e;
+  color:white;
+}
+.option-list ul .active a{
+  background-color: #34495e;
+  color:white;
+}
